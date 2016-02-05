@@ -42,7 +42,6 @@ public class PrefixAutomata<T> {
 
     private int[] prefixFunction;
 
-    private int state;
     private Map<TransitionArg<T>, Integer> transitionTable = new HashMap<>();
 
     PrefixAutomata(Word<T> word, List<T> alphabet) {
@@ -82,20 +81,10 @@ public class PrefixAutomata<T> {
         }
     }
 
-    public int getState() {
-        return state;
-    }
+    public int nextState(int currentState, T nextSymbol) {
+        Integer res = transitionTable.get(new TransitionArg(currentState, nextSymbol));
 
-    public void reset() {
-        state = 0;
-    }
-
-    public int nextState(T symbol) {
-        Integer res = transitionTable.get(new TransitionArg(state, symbol));
-
-        state = res == null ? 0 : res;
-
-        return state;
+        return res == null ? 0 : res;
     }
 
     @Override
