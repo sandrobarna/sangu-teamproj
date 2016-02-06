@@ -1,4 +1,4 @@
-package ge.edu.sangu.teamproj.prefixautomata;
+package ge.edu.sangu.teamproj.stringsearching;
 
 /**
  * Unicode character string implementation of Word interface.

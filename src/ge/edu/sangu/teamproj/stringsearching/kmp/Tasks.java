@@ -1,4 +1,7 @@
-package ge.edu.sangu.teamproj.prefixautomata;
+package ge.edu.sangu.teamproj.stringsearching.kmp;
+
+import ge.edu.sangu.teamproj.stringsearching.Text;
+import ge.edu.sangu.teamproj.stringsearching.kmp.PrefixAutomata;
 
 import java.util.ArrayList;
 import java.util.List;
