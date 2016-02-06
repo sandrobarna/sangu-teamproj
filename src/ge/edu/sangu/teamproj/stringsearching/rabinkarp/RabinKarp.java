@@ -1,6 +1,7 @@
 package ge.edu.sangu.teamproj.stringsearching.rabinkarp;
 
 import ge.edu.sangu.teamproj.stringsearching.Text;
+import ge.edu.sangu.teamproj.stringsearching.naive.Naive;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +52,7 @@ public class RabinKarp {
     }
 
     public static void main(String[] args) {
-        RabinKarp a = new RabinKarp();
-        System.out.println(a.findOccurences(new Text("ababcabababcababababababababcababababc"), new Text("ababc")));
+        Naive a = new Naive();
+        System.out.println(a.findOccurences(new Text("abraaccaa"), new Text("aa")));
     }
 }
