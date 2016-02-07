@@ -24,7 +24,7 @@ public class Launch_Tester {
 
         PreApp((byte) 1); /** Continue */
 
-        Test_Naive(Substr); /** Start RabinKarp Test */
+        Test_Naive(Substr); /** Start Naive Test */
 
         PreApp((byte) 1); /** Continue */
 
