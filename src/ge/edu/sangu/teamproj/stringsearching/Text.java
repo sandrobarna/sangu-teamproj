@@ -1,8 +1,9 @@
-package ge.edu.sangu.teamproj.stringsearching;
+package src.ge.edu.sangu.teamproj.stringsearching;
 
 /**
  * Unicode character string implementation of Word interface.
  */
+
 public class Text implements Word<Character> {
     private String text;
 

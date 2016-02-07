@@ -1,4 +1,4 @@
-package ge.edu.sangu.teamproj.stringsearching;
+package src.ge.edu.sangu.teamproj.stringsearching;
 
 /**
  * Defines basic methods for immutable string.

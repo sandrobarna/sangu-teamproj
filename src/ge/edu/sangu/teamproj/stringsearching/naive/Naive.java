@@ -1,6 +1,6 @@
-package ge.edu.sangu.teamproj.stringsearching.naive;
+package src.ge.edu.sangu.teamproj.stringsearching.naive;
 
-import ge.edu.sangu.teamproj.stringsearching.Word;
+import src.ge.edu.sangu.teamproj.stringsearching.Word;
 
 import java.util.ArrayList;
 import java.util.List;

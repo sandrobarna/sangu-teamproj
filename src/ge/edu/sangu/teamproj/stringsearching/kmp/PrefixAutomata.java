@@ -1,7 +1,6 @@
-package ge.edu.sangu.teamproj.stringsearching.kmp;
+package src.ge.edu.sangu.teamproj.stringsearching.kmp;
 
-import ge.edu.sangu.teamproj.stringsearching.Word;
-
+import src.ge.edu.sangu.teamproj.stringsearching.Word;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
