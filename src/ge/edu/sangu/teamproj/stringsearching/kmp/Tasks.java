@@ -64,6 +64,6 @@ public class Tasks {
     }
 
     public static void main(String[] args) {
-        System.out.println(occurencesInGreyString(6, "abacabadabacabaeabacabadabacaba", 1000009));
+        //System.out.println(occurencesInGreyString(6, "abacabadabacabaeabacabadabacaba", 1000009));
     }
 }

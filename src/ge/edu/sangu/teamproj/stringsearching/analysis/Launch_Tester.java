@@ -18,7 +18,7 @@ public class Launch_Tester {
 
         PreApp((byte) 0); /** Invoke Console.ReadKey() Like Sequence */
 
-        Substr = "su"; /** Static Check String Substring */
+        Substr = "ea"; /** Static Check String Substring */
 
         Test_Rabin(Substr); /** Start RabinKarp Test */
 
@@ -79,15 +79,16 @@ public class Launch_Tester {
 
         long startTime = System.currentTimeMillis();
 
-        Tasks Kmp = new Tasks();
-        Kmp.substringSearch(File_Reader.TextReturn(), A);
+        //Tasks Kmp = new Tasks();
+        Tasks.substringSearch(File_Reader.TextReturn(), A);
         long endTime   = System.currentTimeMillis();
 
         /** Saving Execution Time */
         totalTime_Kms = endTime-startTime;
 
-        System.out.println(" Check Te Indexes: \n" + Kmp.substringSearch(File_Reader.TextReturn(), A));
+        System.out.println(" Check Te Indexes: \n" + Tasks.substringSearch(File_Reader.TextReturn(), A));
         System.out.println(" Program Execution Used: " + (totalTime_Kms) + " MilliSeconds");
+
     }
 
     private static void PreApp(byte c){
@@ -110,7 +111,9 @@ public class Launch_Tester {
     }
 
     private static void generateReport(){
-        System.out.println("\nSubstring Finding Method: RabinKarp Used Time: " + totalTime_rabin + " MilliSeconds");
+        System.out.println("Total: " + File_Reader.countWords(File_Reader.TextReturn()) + " Words Red From .Txt File ");
+        System.out.println("Total: " + Tasks.substringSearch(File_Reader.TextReturn(), Substr).size() + " Occurences Found: \n");
+        System.out.println("Substring Finding Method: RabinKarp Used Time: " + totalTime_rabin + " MilliSeconds");
         System.out.println("Substring Finding Method: Naive Used Time: " + totalTime_naive + " MilliSeconds");
         System.out.println("Substring Finding Method: Kms Used Time: " + totalTime_Kms + " MilliSeconds");
     }
